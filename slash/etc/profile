@@ -1,0 +1,129 @@
+#!/bin/bash.exe
+
+
+unset MAILCHECK
+export EXECIGNORE="*.dll"
+ulimit -c 0
+[ -d "/home/mobaxterm/" ] || /bin/busybox.exe mkdir -p /home/mobaxterm
+[ -d "/home/$USERNAME/" ] || /bin/busybox.exe ln -sf /home/mobaxterm "/home/$USERNAME" 2>/dev/null
+[ -n "$MOBASTARTUPDIR" ] && cd "${MOBASTARTUPDIR}" 2>/dev/null || cd "/home/mobaxterm" 2>/dev/null
+
+PATH="/bin:$PATH"
+HOME="/home/mobaxterm"
+SHELL="/bin/bash.exe"
+TEMP="/tmp"
+TMP="/tmp"
+export LIBGL_ALWAYS_INDIRECT=1
+[ -z "$VERSION" ] && VERSION="10.5"
+[ -z "$DISPLAY" ] && DISPLAY="127.0.0.1:0"
+if [ "$FANCYPS1" == "yes" ]; then
+  NP=0
+  PROMPT_COMMAND='r0=$?;if [ -z "$NP" ]; then i0=0;s0="";while [ "$i0" -lt "${COLUMNS:-80}" ];do s0="q$s0";i0=$[$i0+1];done;builtin echo -ne "\n\E[1;30m\E(0$s0\E(B\E[0m"; [ $r0 == 0 ] && builtin echo -ne "\e[1A\e[32m\e(0d\e(B\e[0m\e[1B" || builtin echo -ne "\e[1A\e[31m\e(0e\e(B\e[0m\e[1B";else unset NP;fi;history -a'
+  PS1='\[\033]0;$PWD\007\]
+\[\033[33m\][\D{%Y-%m-%d %H:%M.%S}]\[\033[0m\]  \[\033[35m\]\w\[\033[0m\]
+\[\033[36m\][\u.\h]\[\033[0m\] \[\033(0\]b\[\033(B\] '
+  unset FANCYPS1
+  export NP
+  StatusLine="Each command status is specified by a special symbol (\e[32m\e(0d\e(B\e[0m or \e[31m\e(0e\e(B\e[0m)    "
+else
+  if [ "$FANCYPS1" == "rxvt" ]; then
+    PS1='
+\[\033[1;33m\][\D{%Y-%m-%d %H:%M.%S}]\[\033[0m\]  \[\033[1;35m\]\w\[\033[0m\]
+\[\033[1;36m\][\u.\h]\[\033[0m\] > '
+  elif [ "$FANCYPS1" == "nosep" ]; then
+    PS1='\[\033]0;$PWD\007\]
+\[\033[33m\][\D{%Y-%m-%d %H:%M.%S}]\[\033[0m\]  \[\033[35m\]\w\[\033[0m\]
+\[\033[36m\][\u.\h]\[\033[0m\] \[\033(0\]b\[\033(B\] '
+  else
+    PS1='
+\[\033[33m\][\D{%Y-%m-%d %H:%M.%S}]\[\033[0m\]  \[\033[35m\]\w\[\033[0m\]
+\[\033[36m\][\u.\h]\[\033[0m\] \[\033(0\]b\[\033(B\] '
+  fi
+  PROMPT_COMMAND="history -a"
+  StatusLine="For more info, type \033[35mhelp\033[0m or click on the help button above.      "
+fi
+HISTTIMEFORMAT="[%Y-%m-%d %H:%M:%S] "
+export TMP TEMP SHELL PATH VERSION HOME DISPLAY PS1 PROMPT_COMMAND HISTTIMEFORMAT
+
+if [ -n "$FIRSTTIME" ]; then
+if [ "$TERM" == "xterm" ]; then
+if [ "$POPUPMODE" == "yes" ]; then
+builtin echo -e "\033[0m \E(0lqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\E(B
+ \E(0x\E(B                \033[1;32m\E(0\`\E(B MobaXterm Personal Edition v10.5 \E(0\`\E(B\033[0m                \E(0x\E(B
+ \E(0x\E(B              \033[1;33m(X server, SSH client and network tools)\033[0m              \E(0x\E(B
+ \E(0x\E(B                                                                    \E(0x\E(B
+ \E(0x\E(B \e(0b\e(B Your computer drives are accessible through the \033[35m/drives\033[0m path     \E(0x\E(B
+ \E(0x\E(B \e(0b\e(B Your DISPLAY is set to \033[35m${EXPORTED_DISPLAY}\033[0m                       \E(0x\E(B
+ \E(0x\E(B \e(0b\e(B `printf "%-80s" "Use \033[36m$POPUPKEY\033[0m to close this console"`\E(0x\E(B
+ \E(0x\E(B \e(0b\e(B `printf "%-80s" "Use \033[36m$SHOWHIDEKEY\033[0m to show/hide MobaXterm"`\E(0x\E(B
+ \E(0mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\E(B"
+elif [ "$DWMMODE" == "yes" ]; then
+builtin echo -e "\033[0m \E(0lqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\E(B
+ \E(0x\E(B                \033[1;32m\E(0\`\E(B MobaXterm Personal Edition v10.5 \E(0\`\E(B\033[0m                \E(0x\E(B
+ \E(0x\E(B              \033[1;33m(X server, SSH client and network tools)\033[0m              \E(0x\E(B
+ \E(0x\E(B                                                                    \E(0x\E(B
+ \E(0x\E(B This is an \033[1;35mX11\033[0m session with the \"tiling\" window manager \033[1;35mDWM\033[0m        \E(0x\E(B
+ \E(0x\E(B                                                                    \E(0x\E(B
+ \E(0x\E(B In this frame, X11 windows are managed in \033[1;36mtile\033[0m or \033[1;36mfloat\033[0m mode.      \E(0x\E(B
+ \E(0x\E(B   - \033[1;31mTile mode\033[0m: windows are automatically placed side by side       \E(0x\E(B
+ \E(0x\E(B   - \033[1;31mFloat mode\033[0m: windows can be resized and moved freely using      \E(0x\E(B
+ \E(0x\E(B     \033[1;36mAlt + Left-click\033[0m for moving and \033[1;36mAlt + Right-click\033[0m for resizing \E(0x\E(B
+ \E(0x\E(B                                                                    \E(0x\E(B
+ \E(0x\E(B The small bottom \033[1;35mtaskbar\033[0m allows you to:                            \E(0x\E(B
+ \E(0x\E(B   - Switch from float to tile mode by clicking on the \033[1;33mleft\033[0m         \E(0x\E(B
+ \E(0x\E(B   - Swap windows positions by clicking on the \033[1;33mmiddle\033[0m               \E(0x\E(B
+ \E(0x\E(B   - Start a new RXVT console by clicking on the \033[1;33mright\033[0m              \E(0x\E(B
+ \E(0mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\E(B"
+elif [ "$FANCYPS1" != "rxvt" ]; then
+    builtin echo -e "\033[0m     \E(0lqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\E(B
+     \E(0x\E(B                \033[32m\E(0\`\E(B MobaXterm Personal Edition v10.5 \E(0\`\E(B\033[0m                \E(0x\E(B
+     \E(0x\E(B              \033[33m(X server, SSH client and network tools)\033[0m              \E(0x\E(B
+     \E(0x\E(B                                                                    \E(0x\E(B
+     \E(0x\E(B \e(0b\e(B Your computer drives are accessible through the \033[35m/drives\033[0m path     \E(0x\E(B
+     \E(0x\E(B \e(0b\e(B Your DISPLAY is set to \033[35m${EXPORTED_DISPLAY}\033[0m                       \E(0x\E(B
+     \E(0x\E(B \e(0b\e(B When using \033[35mSSH\033[0m, your remote DISPLAY is automatically forwarded   \E(0x\E(B
+     \E(0x\E(B \e(0b\e(B ${StatusLine}\E(0x\E(B
+     \E(0x\E(B                                                                    \E(0x\E(B
+     \E(0x\E(B \033[31m\E(0\`\E(B Important:\033[0m                                                       \E(0x\E(B
+     \E(0x\E(B \033[36mThis is MobaXterm Personal Edition. The Professional edition\033[0m       \E(0x\E(B
+     \E(0x\E(B \033[36mallows you to customize MobaXterm for your company: you can add\033[0m    \E(0x\E(B
+     \E(0x\E(B \033[36myour own logo, your parameters, your welcome message and generate\033[0m  \E(0x\E(B
+     \E(0x\E(B \033[36meither an MSI installation package or a portable executable.\033[0m       \E(0x\E(B
+     \E(0x\E(B \033[36mWe can also modify MobaXterm or develop the plugins you need.\033[0m      \E(0x\E(B
+     \E(0x\E(B \033[33mFor more information: \033[35m\033[4mhttps://mobaxterm.mobatek.net/download.html\033[0m  \E(0x\E(B
+     \E(0mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\E(B"
+fi
+unset FIRSTTIME
+unset StatusLine
+unset FANCYPS1
+
+HISTCONTROL=ignoredups
+HISTFILE=/home/mobaxterm/.bash_history
+HISTSIZE=36000
+TMOUT=0
+KRB5CCNAME=FILE:/etc/krb5_cc_cache
+KRB5_CONFIG=/etc/krb5.conf
+EDITOR=/bin/vim.exe
+GIT_EDITOR=/bin/vim.exe
+export HISTCONTROL HISTFILE HISTSIZE TMOUT KRB5CCNAME KRB5_CONFIG EDITOR GIT_EDITOR
+shopt -s nocaseglob
+shopt -s histappend
+shopt -s checkwinsize
+shopt -s dotglob
+shopt -s no_empty_cmd_completion
+
+. /etc/bash_completion
+function OpenIniFile {
+echo "Opening \"C:\Users\SHENGX~1\DOCUME~1\MobaXterm\MobaXterm.ini\"..."
+/bin/cygstart.exe "`cygpath -u "C:\Users\SHENGX~1\DOCUME~1\MobaXterm\MobaXterm.ini"`"
+}
+[ -e "/home/mobaxterm/.bashrc" ] && . /home/mobaxterm/.bashrc
+[ -e "/etc/sessionsaliases.sh" ] && . /etc/sessionsaliases.sh
+
+fi
+fi
+. /etc/baseprofile
+/bin/busybox.exe ls /etc/profile.d >/dev/null 2>/dev/null
+for sc in `/bin/busybox.exe ls /etc/profile.d/*.sh 2>/dev/null`; do . "$sc"; done
+
+

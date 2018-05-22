@@ -1,0 +1,6 @@
+#!/bin/bash.exe
+
+test -e /usr/share/vim/extracted || /usr/share/vim/toextract
+touch /usr/share/vim/extracted
+
+exec /bin/_gvim.exe -g "$@"

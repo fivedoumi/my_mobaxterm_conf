@@ -1,0 +1,21 @@
+#!/bin/bash.exe
+
+if [ -e "/usr/share/man/$1.man" ]; then
+  if grep -q "export PLUGIN=" "/usr/share/man/$1.man"; then
+    . "/usr/share/man/$1.man"
+    echo "Uncompressing $PLUGIN man page. Please wait..."
+    (
+      cd /
+      /bin/dd if="/home/mobaxterm/LauncherFolder/$PLUGIN.mxt" bs="`cat "/home/mobaxterm/LauncherFolder/$PLUGIN.mxt" | /bin/grep -B 999999 "####EOF####" | /bin/wc -c`" skip=1 2>/dev/null| /bin/tar -xjf - usr/share/man/
+    )
+  fi
+  /bin/vim.exe -R -u /etc/vimrc.less -c 'set ft=man nomod nolist titlestring=MANPAGE' "/usr/share/man/$1.man"
+else
+  (
+    cd /tmp
+    /bin/tar -xjf /usr/share/man.tar.bz2 busybox.man $1.man >/dev/null 2>/dev/null
+    if [ -e "$1.man" ]; then
+      /bin/vim.exe -R -u /etc/vimrc.less -c 'set ft=man nomod nolist titlestring=MANPAGE' "$1.man"
+    fi
+  )
+fi

@@ -1,0 +1,18 @@
+# Pango Modules file
+# Automatically generated file, do not edit
+#
+# ModulesPath = /usr/lib/pango/1.8.0/modules
+#
+/usr/lib/pango/1.8.0/modules/pango-arabic-lang.dll ArabicScriptEngineLang PangoEngineLang PangoRenderNone arabic:*
+/usr/lib/pango/1.8.0/modules/pango-indic-lang.dll devaIndicScriptEngineLang PangoEngineLang PangoRenderNone devanagari:*
+/usr/lib/pango/1.8.0/modules/pango-indic-lang.dll bengIndicScriptEngineLang PangoEngineLang PangoRenderNone bengali:*
+/usr/lib/pango/1.8.0/modules/pango-indic-lang.dll guruIndicScriptEngineLang PangoEngineLang PangoRenderNone gurmukhi:*
+/usr/lib/pango/1.8.0/modules/pango-indic-lang.dll gujrIndicScriptEngineLang PangoEngineLang PangoRenderNone gujarati:*
+/usr/lib/pango/1.8.0/modules/pango-indic-lang.dll oryaIndicScriptEngineLang PangoEngineLang PangoRenderNone oriya:*
+/usr/lib/pango/1.8.0/modules/pango-indic-lang.dll tamlIndicScriptEngineLang PangoEngineLang PangoRenderNone tamil:*
+/usr/lib/pango/1.8.0/modules/pango-indic-lang.dll teluIndicScriptEngineLang PangoEngineLang PangoRenderNone telugu:*
+/usr/lib/pango/1.8.0/modules/pango-indic-lang.dll kndaIndicScriptEngineLang PangoEngineLang PangoRenderNone kannada:*
+/usr/lib/pango/1.8.0/modules/pango-indic-lang.dll mlymIndicScriptEngineLang PangoEngineLang PangoRenderNone malayalam:*
+/usr/lib/pango/1.8.0/modules/pango-indic-lang.dll sinhIndicScriptEngineLang PangoEngineLang PangoRenderNone sinhala:*
+/usr/lib/pango/1.8.0/modules/pango-thai-lang.dll ThaiScriptEngineLang PangoEngineLang PangoRenderNone thai:*
+

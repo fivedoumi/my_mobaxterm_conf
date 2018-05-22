@@ -1,0 +1,68 @@
+Welcome to the XWin X Server
+Vendor: Moba/X
+Release: 1.16.3.0
+OS: Unknown  [Windows NT 10.0 build 14393] (WoW64)
+Package: version  built 2015-05-28
+
+XWin was started with the following command line:
+
+
+ C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash\bin\XWin_MobaX.exe 
+ -silent-dup-error -notrayicon -nolisten inet6 -hostintitle +bs 
+ -clipboard -nowgl -screen 0 @1 -multiwindow -noreset :0 
+
+ddxProcessArgument - Initializing default screens
+winInitializeScreenDefaults - primary monitor w 1366 h 768
+winInitializeScreenDefaults - native DPI x 96 y 96
+winInitializeScreens - 1
+winInitializeScreen - 0
+ddxProcessArgument - screen - Found Valid ``@Monitor'' = 1 arg
+(==) FontPath set to /usr/share/fonts/misc/
+(==) FontPath set to C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash/usr/share/fonts/misc/
+(==) FontPath set to /usr/share/fonts/TTF/
+(==) FontPath set to C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash/usr/share/fonts/TTF/
+(==) FontPath set to /usr/share/fonts/OTF/
+(==) FontPath set to C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash/usr/share/fonts/OTF/
+(==) FontPath set to /usr/share/fonts/Type1/
+(==) FontPath set to C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash/usr/share/fonts/Type1/
+(==) FontPath set to /usr/share/fonts/100dpi/
+(==) FontPath set to C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash/usr/share/fonts/100dpi/
+(==) FontPath set to /usr/share/fonts/75dpi/
+(==) FontPath set to C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash/usr/share/fonts/75dpi/
+(==) FontPath set to "C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash/usr/share/fonts/misc/,C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash/usr/share/fonts/TTF/,C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash/usr/share/fonts/OTF/,C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash/usr/share/fonts/Type1/,C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash/usr/share/fonts/100dpi/,C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash/usr/share/fonts/75dpi/"
+(==) Setting XKEYSYMDB path to XKEYSYMDB=C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash\usr\share\X11\XKeysymDB
+(==) Setting XERRORDB path to XERRORDB=C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash\usr\share\X11\XErrorDB
+(==) Setting XLOCALEDIR path to XLOCALEDIR=C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash\usr\share\X11\locale
+(==) Logfile set to "C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash\var\log\xwin\XWin.0.log"
+(==) Setting XKB path to C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash\usr\share\X11\xkb
+[429058.812] winDetectSupportedEngines - DirectDraw4 installed, allowing ShadowDDNL
+[429058.812] winDetectSupportedEngines - Returning, supported engines 00000015
+[429058.812] winSetEngine - Multi Window or Rootless => ShadowGDI
+[429058.812] winScreenInit - Using Windows display depth of 32 bits per pixel
+[429058.812] winAllocateFBShadowGDI - Creating DIB with width: 3286 height: 1080 depth: 32
+[429058.812] winFinishScreenInitFB - Masks: 00ff0000 0000ff00 000000ff
+[429058.812] winInitVisualsShadowGDI - Masks 00ff0000 0000ff00 000000ff BPRGB 8 d 24 bpp 32
+[429058.843] Warning: Locale not supported by X, falling back to 'C' locale.
+[429058.859] (II) AIGLX: enabled GLX_EXT_texture_from_pixmap
+[429058.859] (II) AIGLX: Loaded and initialized swrast
+[429058.859] (II) GLX: Initialized DRISWRAST GL provider for screen 0
+[429058.921] (II) [XKB]  "C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash\var\log\xwin\xkb_a14280" file successfully created.
+[429058.921] (II) [XKB]  Launching xkbcomp.exe with the following command:
+[429058.921] (II) [XKB]  "C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash\bin\xkbcomp_w32.exe" -w 1 "-RC:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash\usr\share\X11\xkb" -xkm "C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash\var\log\xwin\xkb_a14280" -em1 "The XKEYBOARD keymap compiler (xkbcomp) reports:" -emp "> " -eml "Errors from xkbcomp are not fatal to the X server" "C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash\var\log\xwin\server-0.xkm"
+[429058.921] (II) [XKB]  LaunchXkbComp(II) :  succeeded
+[429059.000] (II) [XKB]  Successfully created keyboard mapping file "C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash\var\log\xwin\xkb_a14280"
+[429059.000] winPointerWarpCursor - Discarding first warp: 1643 540
+[429059.000] (--) 5 mouse buttons found
+[429059.000] (--) Setting autorepeat to delay=500, rate=31
+[429059.000] (--) Windows keyboard layout: "00000804" (00000804) "Chinese (Simplified) - US Keyboard", type 7
+[429059.000] (EE) Keyboardlayout "Chinese (Simplified) - US Keyboard" (00000804) is unknown, using X server default layout
+[429059.000] Rules = "base" Model = "pc105" Layout = "us" Variant = "" Options = ""
+[429059.000] winInitMultiWindowWM - DISPLAY=127.0.0.1:0.0
+[429059.000] winMultiWindowXMsgProc - DISPLAY=127.0.0.1:0.0
+[429059.000] winProcEstablishConnection - winInitClipboard returned.
+[429059.000] winInitMultiWindowWM - XOpenDisplay () returned and successfully opened the display.
+[429059.000] winMultiWindowXMsgProc - XOpenDisplay () returned and successfully opened the display.
+[429059.000] winClipboardThreadProc - DISPLAY=127.0.0.1:0.0
+[429059.000] OS maintains clipboard viewer chain: yes
+[429059.015] winClipboardProc - XOpenDisplay () returned and successfully opened the display.
+[429064.453] winWindowProc - WM_EXITSIZEMOVE

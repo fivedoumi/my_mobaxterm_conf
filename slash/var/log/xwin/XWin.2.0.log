@@ -1,0 +1,591 @@
+Welcome to the XWin X Server
+Vendor: Moba/X
+Release: 1.16.3.0
+OS: Unknown  [Windows NT 10.0 build 14393] (WoW64)
+Package: version  built 2015-05-28
+
+XWin was started with the following command line:
+
+
+ C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash\bin\XWin_MobaX.exe 
+ -noreset -silent-dup-error -notrayicon -nolisten inet6 -clipboard 
+ -ac -fp /usr/share/fonts/misc :2.0 
+
+ddxProcessArgument - Initializing default screens
+winInitializeScreenDefaults - primary monitor w 1366 h 768
+winInitializeScreenDefaults - native DPI x 96 y 96
+(==) FontPath set to /usr/share/fonts/misc/
+(==) FontPath set to C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash/usr/share/fonts/misc/
+(==) FontPath set to /usr/share/fonts/TTF/
+(==) FontPath set to C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash/usr/share/fonts/TTF/
+(==) FontPath set to /usr/share/fonts/OTF/
+(==) FontPath set to C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash/usr/share/fonts/OTF/
+(==) FontPath set to /usr/share/fonts/Type1/
+(==) FontPath set to C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash/usr/share/fonts/Type1/
+(==) FontPath set to /usr/share/fonts/100dpi/
+(==) FontPath set to C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash/usr/share/fonts/100dpi/
+(==) FontPath set to /usr/share/fonts/75dpi/
+(==) FontPath set to C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash/usr/share/fonts/75dpi/
+(==) FontPath set to "C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash/usr/share/fonts/misc/,C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash/usr/share/fonts/TTF/,C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash/usr/share/fonts/OTF/,C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash/usr/share/fonts/Type1/,C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash/usr/share/fonts/100dpi/,C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash/usr/share/fonts/75dpi/"
+(==) Setting XKEYSYMDB path to XKEYSYMDB=C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash\usr\share\X11\XKeysymDB
+(==) Setting XERRORDB path to XERRORDB=C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash\usr\share\X11\XErrorDB
+(==) Setting XLOCALEDIR path to XLOCALEDIR=C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash\usr\share\X11\locale
+(==) Logfile set to "C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash\var\log\xwin\XWin.2.0.log"
+(==) Setting XKB path to C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash\usr\share\X11\xkb
+[415946.234] winDetectSupportedEngines - DirectDraw4 installed, allowing ShadowDDNL
+[415946.234] winDetectSupportedEngines - Returning, supported engines 00000015
+[415946.234] winSetEngine - Using Shadow DirectDraw NonLocking
+[415946.234] winScreenInit - Using Windows display depth of 32 bits per pixel
+[415946.281] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[415946.281] winFinishScreenInitFB - Masks: 00ff0000 0000ff00 000000ff
+[415946.328] Warning: Locale not supported by X, falling back to 'C' locale.
+[415946.328] (EE) AIGLX: No native OpenGL in modes with a root window
+[415946.343] (II) AIGLX: enabled GLX_EXT_texture_from_pixmap
+[415946.343] (II) AIGLX: Loaded and initialized swrast
+[415946.343] (II) GLX: Initialized DRISWRAST GL provider for screen 0
+[415946.421] (II) [XKB]  "C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash\var\log\xwin\xkb_a07880" file successfully created.
+[415946.421] (II) [XKB]  Launching xkbcomp.exe with the following command:
+[415946.421] (II) [XKB]  "C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash\bin\xkbcomp_w32.exe" -w 1 "-RC:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash\usr\share\X11\xkb" -xkm "C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash\var\log\xwin\xkb_a07880" -em1 "The XKEYBOARD keymap compiler (xkbcomp) reports:" -emp "> " -eml "Errors from xkbcomp are not fatal to the X server" "C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash\var\log\xwin\server-2.0.xkm"
+[415946.421] (II) [XKB]  LaunchXkbComp(II) :  succeeded
+[415946.515] (II) [XKB]  Successfully created keyboard mapping file "C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash\var\log\xwin\xkb_a07880"
+[415946.515] winPointerWarpCursor - Discarding first warp: 675 344
+[415946.515] (--) 5 mouse buttons found
+[415946.515] (--) Setting autorepeat to delay=500, rate=31
+[415946.515] (--) Windows keyboard layout: "00000804" (00000804) "Chinese (Simplified) - US Keyboard", type 7
+[415946.515] (EE) Keyboardlayout "Chinese (Simplified) - US Keyboard" (00000804) is unknown, using X server default layout
+[415946.515] Rules = "base" Model = "pc105" Layout = "us" Variant = "" Options = ""
+[415949.578] winProcEstablishConnection - winInitClipboard returned.
+[415949.593] winClipboardThreadProc - DISPLAY=127.0.0.1:2.0.0
+[415949.593] OS maintains clipboard viewer chain: yes
+[415949.593] winClipboardProc - Failed opening the display, giving up
+[415950.593] winClipboardProc - trying to restart clipboard thread 
+[415950.593] winClipboardThreadProc - DISPLAY=127.0.0.1:2.0.0
+[415950.593] OS maintains clipboard viewer chain: yes
+[415950.593] winClipboardProc - Failed opening the display, giving up
+[415951.593] winClipboardProc - trying to restart clipboard thread 
+[415951.593] winClipboardThreadProc - DISPLAY=127.0.0.1:2.0.0
+[415951.593] OS maintains clipboard viewer chain: yes
+[415951.593] winClipboardProc - Failed opening the display, giving up
+[415952.593] winClipboardProc - trying to restart clipboard thread 
+[415952.593] winClipboardThreadProc - DISPLAY=127.0.0.1:2.0.0
+[415952.593] OS maintains clipboard viewer chain: yes
+[415952.593] winClipboardProc - Failed opening the display, giving up
+[415953.593] winClipboardProc - trying to restart clipboard thread 
+[415953.593] winClipboardThreadProc - DISPLAY=127.0.0.1:2.0.0
+[415953.593] OS maintains clipboard viewer chain: yes
+[415953.593] winClipboardProc - Failed opening the display, giving up
+[415954.593] winClipboardProc - trying to restart clipboard thread 
+[415954.593] winClipboardThreadProc - DISPLAY=127.0.0.1:2.0.0
+[415954.593] OS maintains clipboard viewer chain: yes
+[415954.593] winClipboardProc - Failed opening the display, giving up
+[415955.593] winClipboardProc - trying to restart clipboard thread 
+[415955.593] winClipboardThreadProc - DISPLAY=127.0.0.1:2.0.0
+[415955.593] OS maintains clipboard viewer chain: yes
+[415955.593] winClipboardProc - Failed opening the display, giving up
+[415956.593] winClipboardProc - trying to restart clipboard thread 
+[415956.593] winClipboardThreadProc - DISPLAY=127.0.0.1:2.0.0
+[415956.593] OS maintains clipboard viewer chain: yes
+[415956.593] winClipboardProc - Failed opening the display, giving up
+[415957.593] winClipboardProc - trying to restart clipboard thread 
+[415957.593] winClipboardThreadProc - DISPLAY=127.0.0.1:2.0.0
+[415957.593] OS maintains clipboard viewer chain: yes
+[415957.593] winClipboardProc - Failed opening the display, giving up
+[415958.593] winClipboardProc - trying to restart clipboard thread 
+[415958.593] winClipboardThreadProc - DISPLAY=127.0.0.1:2.0.0
+[415958.593] OS maintains clipboard viewer chain: yes
+[415958.593] winClipboardProc - Failed opening the display, giving up
+[415959.593] winClipboardProc - trying to restart clipboard thread 
+[415959.593] winClipboardThreadProc - DISPLAY=127.0.0.1:2.0.0
+[415959.593] OS maintains clipboard viewer chain: yes
+[415959.593] winClipboardProc - Failed opening the display, giving up
+[415960.593] winClipboardProc - trying to restart clipboard thread 
+[415960.593] winClipboardThreadProc - DISPLAY=127.0.0.1:2.0.0
+[415960.593] OS maintains clipboard viewer chain: yes
+[415960.593] winClipboardProc - Failed opening the display, giving up
+[415961.593] winClipboardProc - trying to restart clipboard thread 
+[415961.593] winClipboardThreadProc - DISPLAY=127.0.0.1:2.0.0
+[415961.593] OS maintains clipboard viewer chain: yes
+[415961.593] winClipboardProc - Failed opening the display, giving up
+[415962.593] winClipboardProc - trying to restart clipboard thread 
+[415962.593] winClipboardThreadProc - DISPLAY=127.0.0.1:2.0.0
+[415962.593] OS maintains clipboard viewer chain: yes
+[415962.593] winClipboardProc - Failed opening the display, giving up
+[415963.593] winClipboardProc - trying to restart clipboard thread 
+[415963.593] winClipboardThreadProc - DISPLAY=127.0.0.1:2.0.0
+[415963.593] OS maintains clipboard viewer chain: yes
+[415963.593] winClipboardProc - Failed opening the display, giving up
+[415964.593] winClipboardProc - trying to restart clipboard thread 
+[415964.593] winClipboardThreadProc - DISPLAY=127.0.0.1:2.0.0
+[415964.593] OS maintains clipboard viewer chain: yes
+[415964.593] winClipboardProc - Failed opening the display, giving up
+[415965.593] winClipboardProc - trying to restart clipboard thread 
+[415965.593] winClipboardThreadProc - DISPLAY=127.0.0.1:2.0.0
+[415965.593] OS maintains clipboard viewer chain: yes
+[415965.593] winClipboardProc - Failed opening the display, giving up
+[415966.593] winClipboardProc - trying to restart clipboard thread 
+[415966.593] winClipboardThreadProc - DISPLAY=127.0.0.1:2.0.0
+[415966.593] OS maintains clipboard viewer chain: yes
+[415966.593] winClipboardProc - Failed opening the display, giving up
+[415967.593] winClipboardProc - trying to restart clipboard thread 
+[415967.593] winClipboardThreadProc - DISPLAY=127.0.0.1:2.0.0
+[415967.593] OS maintains clipboard viewer chain: yes
+[415967.593] winClipboardProc - Failed opening the display, giving up
+[415968.593] winClipboardProc - trying to restart clipboard thread 
+[415968.593] winClipboardThreadProc - DISPLAY=127.0.0.1:2.0.0
+[415968.593] OS maintains clipboard viewer chain: yes
+[415968.593] winClipboardProc - Failed opening the display, giving up
+[415969.593] winClipboardProc - trying to restart clipboard thread 
+[415969.593] winClipboardThreadProc - DISPLAY=127.0.0.1:2.0.0
+[415969.593] OS maintains clipboard viewer chain: yes
+[415969.593] winClipboardProc - Failed opening the display, giving up
+[415970.609] winClipboardProc - trying to restart clipboard thread 
+[415970.609] winClipboardThreadProc - DISPLAY=127.0.0.1:2.0.0
+[415970.609] OS maintains clipboard viewer chain: yes
+[415970.609] winClipboardProc - Failed opening the display, giving up
+[415971.609] winClipboardProc - trying to restart clipboard thread 
+[415971.609] winClipboardThreadProc - DISPLAY=127.0.0.1:2.0.0
+[415971.609] OS maintains clipboard viewer chain: yes
+[415971.609] winClipboardProc - Failed opening the display, giving up
+[415972.609] winClipboardProc - trying to restart clipboard thread 
+[415972.609] winClipboardThreadProc - DISPLAY=127.0.0.1:2.0.0
+[415972.609] OS maintains clipboard viewer chain: yes
+[415972.609] winClipboardProc - Failed opening the display, giving up
+[415973.609] winClipboardProc - trying to restart clipboard thread 
+[415973.609] winClipboardThreadProc - DISPLAY=127.0.0.1:2.0.0
+[415973.609] OS maintains clipboard viewer chain: yes
+[415973.609] winClipboardProc - Failed opening the display, giving up
+[415974.609] winClipboardProc - trying to restart clipboard thread 
+[415974.609] winClipboardThreadProc - DISPLAY=127.0.0.1:2.0.0
+[415974.609] OS maintains clipboard viewer chain: yes
+[415974.609] winClipboardProc - Failed opening the display, giving up
+[415975.609] winClipboardProc - trying to restart clipboard thread 
+[415975.609] winClipboardThreadProc - DISPLAY=127.0.0.1:2.0.0
+[415975.609] OS maintains clipboard viewer chain: yes
+[415975.609] winClipboardProc - Failed opening the display, giving up
+[415976.609] winClipboardProc - trying to restart clipboard thread 
+[415976.609] winClipboardThreadProc - DISPLAY=127.0.0.1:2.0.0
+[415976.609] OS maintains clipboard viewer chain: yes
+[415976.609] winClipboardProc - Failed opening the display, giving up
+[415977.609] winClipboardProc - trying to restart clipboard thread 
+[415977.609] winClipboardThreadProc - DISPLAY=127.0.0.1:2.0.0
+[415977.609] OS maintains clipboard viewer chain: yes
+[415977.609] winClipboardProc - Failed opening the display, giving up
+[415978.609] winClipboardProc - trying to restart clipboard thread 
+[415978.609] winClipboardThreadProc - DISPLAY=127.0.0.1:2.0.0
+[415978.609] OS maintains clipboard viewer chain: yes
+[415978.609] winClipboardProc - Failed opening the display, giving up
+[415979.609] winClipboardProc - trying to restart clipboard thread 
+[415979.609] winClipboardThreadProc - DISPLAY=127.0.0.1:2.0.0
+[415979.609] OS maintains clipboard viewer chain: yes
+[415979.609] winClipboardProc - Failed opening the display, giving up
+[415980.609] winClipboardProc - trying to restart clipboard thread 
+[415980.609] winClipboardThreadProc - DISPLAY=127.0.0.1:2.0.0
+[415980.609] OS maintains clipboard viewer chain: yes
+[415980.609] winClipboardProc - Failed opening the display, giving up
+[415981.609] winClipboardProc - trying to restart clipboard thread 
+[415981.609] winClipboardThreadProc - DISPLAY=127.0.0.1:2.0.0
+[415981.609] OS maintains clipboard viewer chain: yes
+[415981.609] winClipboardProc - Failed opening the display, giving up
+[415982.609] winClipboardProc - trying to restart clipboard thread 
+[415982.609] winClipboardThreadProc - DISPLAY=127.0.0.1:2.0.0
+[415982.609] OS maintains clipboard viewer chain: yes
+[415982.609] winClipboardProc - Failed opening the display, giving up
+[415983.609] winClipboardProc - trying to restart clipboard thread 
+[415983.609] winClipboardThreadProc - DISPLAY=127.0.0.1:2.0.0
+[415983.609] OS maintains clipboard viewer chain: yes
+[415983.609] winClipboardProc - Failed opening the display, giving up
+[415984.609] winClipboardProc - trying to restart clipboard thread 
+[415984.609] winClipboardThreadProc - DISPLAY=127.0.0.1:2.0.0
+[415984.609] OS maintains clipboard viewer chain: yes
+[415984.609] winClipboardProc - Failed opening the display, giving up
+[415985.609] winClipboardProc - trying to restart clipboard thread 
+[415985.609] winClipboardThreadProc - DISPLAY=127.0.0.1:2.0.0
+[415985.609] OS maintains clipboard viewer chain: yes
+[415985.609] winClipboardProc - Failed opening the display, giving up
+[415986.609] winClipboardProc - trying to restart clipboard thread 
+[415986.609] winClipboardThreadProc - DISPLAY=127.0.0.1:2.0.0
+[415986.609] OS maintains clipboard viewer chain: yes
+[415986.609] winClipboardProc - Failed opening the display, giving up
+[415987.609] winClipboardProc - trying to restart clipboard thread 
+[415987.609] winClipboardThreadProc - DISPLAY=127.0.0.1:2.0.0
+[415987.609] OS maintains clipboard viewer chain: yes
+[415987.609] winClipboardProc - Failed opening the display, giving up
+[415988.609] winClipboardProc - trying to restart clipboard thread 
+[415988.609] winClipboardThreadProc - DISPLAY=127.0.0.1:2.0.0
+[415988.609] OS maintains clipboard viewer chain: yes
+[415988.609] winClipboardProc - Failed opening the display, giving up
+[415988.609] winClipboardProc - the clipboard thread has restarted 40 times and seems to be unstable, disabling clipboard integration
+[416587.937] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[416601.187] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[416617.953] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[416647.953] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[416661.187] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[416677.953] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[416707.953] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[416721.140] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[416737.953] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[416767.953] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[416781.140] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[416797.968] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[416827.968] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[416841.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[416857.968] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[416887.968] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[416901.140] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[416917.968] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[416947.984] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[416961.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[416977.984] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417007.984] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417021.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417037.984] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417068.000] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417081.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417097.984] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417128.000] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417141.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417158.000] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417188.203] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417201.187] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417218.000] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417248.000] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417261.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417278.000] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417308.015] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417321.187] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417338.015] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417368.015] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417381.187] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417398.015] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417428.015] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417441.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417458.031] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417488.031] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417501.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417518.031] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417548.031] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417561.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417578.031] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417608.031] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417621.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417638.031] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417668.046] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417681.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417698.046] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417728.046] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417741.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417758.046] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417788.046] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417801.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417818.046] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417848.062] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417861.125] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417878.062] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417908.062] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417921.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417938.062] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417968.062] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417981.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[417998.062] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418028.078] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418041.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418058.078] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418088.078] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418101.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418118.078] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418148.078] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418161.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418178.078] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418208.093] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418221.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418238.093] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418268.093] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418281.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418298.093] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418328.093] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418341.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418358.109] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418388.109] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418401.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418418.109] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418448.109] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418461.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418478.109] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418508.109] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418521.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418538.125] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418568.125] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418581.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418598.125] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418628.125] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418641.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418658.125] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418688.125] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418701.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418718.140] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418748.140] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418761.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418778.140] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418808.140] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418821.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418838.140] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418868.156] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418881.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418898.156] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418928.156] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418941.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418958.156] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[418988.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419001.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419018.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419048.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419061.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419078.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419108.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419121.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419138.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419168.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419181.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419198.187] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419228.187] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419241.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419258.187] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419288.187] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419301.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419318.187] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419348.203] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419361.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419378.203] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419408.203] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419421.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419438.296] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419468.203] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419481.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419498.218] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419528.218] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419541.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419558.218] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419588.218] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419601.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419618.218] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419648.218] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419661.125] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419678.234] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419708.234] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419721.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419738.234] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419768.234] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419781.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419798.234] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419828.234] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419841.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419858.250] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419888.250] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419901.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419918.250] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419948.250] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419961.187] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[419978.250] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420008.265] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420021.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420038.265] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420068.265] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420081.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420098.265] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420128.265] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420141.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420158.281] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420188.281] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420201.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420218.281] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420248.281] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420261.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420278.281] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420308.296] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420321.140] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420338.296] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420368.296] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420381.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420398.296] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420428.296] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420441.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420458.296] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420488.312] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420501.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420518.312] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420548.328] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420561.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420578.312] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420608.312] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420621.125] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420638.328] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420668.328] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420681.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420698.328] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420728.328] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420741.125] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420758.328] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420788.343] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420801.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420818.343] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420848.343] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420861.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420878.343] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420908.343] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420921.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420938.359] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420968.359] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420981.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[420998.359] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421028.359] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421041.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421058.359] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421088.359] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421101.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421118.375] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421148.375] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421161.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421178.375] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421208.375] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421221.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421238.390] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421268.390] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421281.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421298.390] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421328.390] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421341.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421358.390] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421388.390] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421401.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421418.406] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421448.406] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421461.125] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421478.406] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421508.406] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421521.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421538.406] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421568.421] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421581.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421598.437] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421628.421] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421641.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421658.437] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421688.421] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421701.125] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421718.437] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421748.437] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421761.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421778.437] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421808.437] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421821.156] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421838.453] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421868.453] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421881.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421898.453] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421928.453] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421941.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421958.453] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[421988.468] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422001.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422018.468] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422048.468] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422061.156] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422078.468] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422108.468] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422121.156] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422138.484] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422168.484] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422181.156] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422198.484] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422228.484] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422241.156] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422258.484] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422288.500] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422301.125] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422318.500] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422348.500] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422361.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422378.500] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422408.500] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422421.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422438.625] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422468.515] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422481.156] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422498.515] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422528.515] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422541.156] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422558.531] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422588.531] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422601.156] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422618.531] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422648.531] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422661.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422678.531] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422708.546] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422721.156] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422738.546] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422768.546] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422781.156] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422798.546] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422828.546] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422841.156] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422858.562] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422888.562] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422901.171] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422918.562] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422948.562] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422961.156] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[422978.578] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423008.578] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423021.156] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423038.578] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423068.578] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423081.156] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423098.578] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423128.578] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423141.156] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423158.593] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423188.593] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423201.156] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423218.593] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423248.593] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423261.109] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423278.609] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423308.609] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423321.156] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423338.609] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423368.609] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423381.156] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423398.625] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423428.625] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423441.156] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423458.625] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423488.625] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423501.156] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423518.625] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423548.625] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423561.156] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423578.640] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423608.640] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423621.156] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423638.640] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423668.640] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423681.156] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423698.656] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423728.656] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423741.156] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423758.609] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423788.671] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423798.843] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423826.093] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423836.156] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423846.234] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423856.421] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423861.109] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423871.156] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423878.671] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423887.109] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423898.359] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423908.390] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423921.125] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[423941.968] winWindowProc - WM_SIZE - new client area w: 1350 h: 689

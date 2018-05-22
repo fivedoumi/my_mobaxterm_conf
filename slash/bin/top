@@ -1,0 +1,21 @@
+#!/bin/bash
+
+(
+  if ! ls -al /proc/$$/fd/ | /bin/busybox.exe egrep " 1 \-> /dev/pty| 1 \-> /dev/tty| 1 \-> /dev/pts" >/dev/null 2>/dev/null; then
+    /bin/TCPCapture.exe -ps1 -cols 36000 -lines 36000
+  elif [ "$1" == "-once" ] || [ "$2" == "-once" ]; then
+    if [ "$1" == "-nocolor" ] || [ "$2" == "-nocolor" ]; then
+      /bin/TCPCapture.exe -ps1 -cols 36000 -lines 36000
+    else
+      /bin/TCPCapture.exe -ps2 -cols 36000 -lines 36000
+    fi
+  else
+    cd /tmp
+    if [ "$1" == "-nocolor" ] || [ "$2" == "-nocolor" ]; then
+      /bin/TCPCapture.exe -top1 -cols "`ttysize w`" -lines "`ttysize h`" | (while read ligne; do while [ ! -e "/tmp/top.sh" ]; do usleep 360000; done; /tmp/top.sh 2>/dev/null; done)
+    else
+      /bin/TCPCapture.exe -top2 -cols "`ttysize w`" -lines "`ttysize h`" | (while read ligne; do while [ ! -e "/tmp/top.sh" ]; do usleep 360000; done; /tmp/top.sh 2>/dev/null; done)
+    fi
+    cd -
+  fi
+)

@@ -1,0 +1,131 @@
+#!/bin/zsh.exe
+
+
+
+unset MAILCHECK
+builtin ulimit -c 0
+[ -d "/home/mobaxterm/" ] || mkdir -p /home/mobaxterm
+[ -d "/home/$USERNAME/" ] || ln -sf /home/mobaxterm "/home/$USERNAME" 2>/dev/null
+[ -n "$MOBASTARTUPDIR" ] && cd "${MOBASTARTUPDIR}" 2>/dev/null || cd "/home/mobaxterm" 2>/dev/null
+
+if [ "$LANG" != "fr_FR.UTF-8" ]; then
+  CodeEAigu="é"
+  CodeEGrave="è"
+  CodeAGrave="à"
+else
+  CodeEAigu="Ã©"
+  CodeEGrave="Ã¨"
+  CodeAGrave="Ã "
+fi
+
+PATH="/bin:$PATH"
+HOME="/home/mobaxterm"
+SHELL="/bin/zsh.exe"
+TEMP="/tmp"
+TMP="/tmp"
+export LIBGL_ALWAYS_INDIRECT=1
+[ -z "$DISPLAY" ] && DISPLAY="127.0.0.1:0"
+if [ "$FANCYPS1" = "yes" ]; then
+  NP=0
+  PROMPT_COMMAND='r0=$?;if [ -z "$NP" ]; then i0=0;s0="";while [ "$i0" -lt "${COLUMNS:-80}" ];do s0="q$s0";i0=$[$i0+1];done;builtin echo -ne "\n\E[1;30m\e(0$s0\e(B\E[0m"; [ $r0 == 0 ] && builtin echo -ne "\e[1A\e[32m\e(0d\e(B\e[0m\e[1B" || builtin echo -ne "\e[1A\e[31m\e(0e\e(B\e[0m\e[1B";else unset NP;fi;history -a'
+  PS1='\[\e]0;$PWD\007\]
+\[\e[33m\][\D{%d/%m/%Y %H:%M.%S}]\[\e[0m\]  \[\e[35m\]\w\[\e[0m\]
+\[\e[36m\][\u.\h]\[\e[0m\] \[\e(0\]b\[\e(B\] '
+  unset FANCYPS1
+  export NP
+  StatusLine="Le statut de chaque commande est indiqu${CodeEAigu} par un symbole (\e[32m\e(0d\e(B\e[0m ou \e[31m\e(0e\e(B\e[0m) "
+else
+  if [ "$FANCYPS1" = "rxvt" ]; then
+    PS1='
+\[\e[1;33m\][\D{%d/%m/%Y %H:%M.%S}]\[\e[0m\]  \[\e[1;35m\]\w\[\e[0m\]
+\[\e[1;36m\][\u.\h]\[\e[0m\] > '
+  elif [ "$FANCYPS1" = "nosep" ]; then
+    PS1='\[\e]0;$PWD\007\]
+\[\e[33m\][\D{%d/%m/%Y %H:%M.%S}]\[\e[0m\]  \[\e[35m\]\w\[\e[0m\]
+\[\e[36m\][\u.\h]\[\e[0m\] \[\e(0\]b\[\e(B\] '
+  else
+    PS1='
+\[\e[33m\][\D{%d/%m/%Y %H:%M.%S}]\[\e[0m\]  \[\e[35m\]\w\[\e[0m\]
+\[\e[36m\][\u.\h]\[\e[0m\] \[\e(0\]b\[\e(B\] '
+  fi
+  PROMPT_COMMAND="history -a"
+  StatusLine="Pour plus d'info, tapez \e[35mhelp\e[0m ou cliquez sur le bouton ci-dessus. "
+fi
+PS1='
+%F{y}[%D %*]%F{def}  %F{m}%~%F{def}
+%F{c}[%n.%m]%F{def}%{ %}âž¤%{ %}'
+#export RPROMPT='%{  %}%(?.?.?)'  
+export HISTCONTROL=ignoredups
+export HISTIGNORE="exit:reset"
+export HISTSIZE=360000
+export HISTFILE=/home/mobaxterm/.zsh_history
+export SAVEHIST=360000
+export TMOUT=0
+HISTTIMEFORMAT="[%Y-%m-%d %H:%M:%S] "
+export TMP TEMP SHELL PATH VERSION HOME DISPLAY PS1 PROMPT_COMMAND HISTTIMEFORMAT
+
+if [ -n "$FIRSTTIME" ]; then
+if [ "$TERM" = "xterm" ]; then
+if [ "$DWMMODE" = "yes" ]; then
+builtin echo -e "\e[0m \e(0lqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\e(B
+ \e(0x\e(B                \e[1;32m\e(0\`\e(B MobaXterm Personal Edition v9.3 \e(0\`\e(B\e[0m                 \e(0x\e(B
+ \e(0x\e(B      \e[1;33m- BETA VERSION: DO NOT USE IN PRODUCTION ENVIRONMENT -\e[0m        \e(0x\e(B
+ \e(0x\e(B                                                                    \e(0x\e(B
+ \e(0x\e(B This is an \e[1;35mX11\e[0m session with the \"tiling\" window manager \e[1;35mDWM\e[0m        \e(0x\e(B
+ \e(0x\e(B                                                                    \e(0x\e(B
+ \e(0x\e(B In this frame, X11 windows are managed in \e[1;36mtile\e[0m or \e[1;36mfloat\e[0m mode.      \e(0x\e(B
+ \e(0x\e(B   - \e[1;31mTile mode\e[0m: windows are automatically placed side by side       \e(0x\e(B
+ \e(0x\e(B   - \e[1;31mFloat mode\e[0m: windows can be resized and moved freely using      \e(0x\e(B
+ \e(0x\e(B     \e[1;36mAlt + Left-click\e[0m for moving and \e[1;36mAlt + Right-click\e[0m for resizing \e(0x\e(B
+ \e(0x\e(B                                                                    \e(0x\e(B
+ \e(0x\e(B The small bottom \e[1;35mtaskbar\e[0m allows you to:                            \e(0x\e(B
+ \e(0x\e(B   - Switch from float to tile mode by clicking on the \e[1;33mleft\e[0m         \e(0x\e(B
+ \e(0x\e(B   - Swap windows positions by clicking on the \e[1;33mmiddle\e[0m               \e(0x\e(B
+ \e(0x\e(B   - Start a new RXVT console by clicking on the \e[1;33mright\e[0m              \e(0x\e(B
+ \e(0mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\e(B"
+elif [ "$FANCYPS1" != "rxvt" ]; then
+    builtin echo -e "\e[0m     \e(0lqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\e(B
+     \e(0x\e(B                \e[32m\e(0\`\e(B MobaXterm Personal Edition v9.3 \e(0\`\e(B\e[0m                 \e(0x\e(B
+     \e(0x\e(B      \e[33m- BETA VERSION: DO NOT USE IN PRODUCTION ENVIRONMENT -\e[0m        \e(0x\e(B
+     \e(0x\e(B                                                                    \e(0x\e(B
+     \e(0x\e(B \e(0b\e(B Vos disques durs sont accessibles au travers du dossier \e[35m/drives\e[0m  \e(0x\e(B
+     \e(0x\e(B \e(0b\e(B Le DISPLAY est positionn${CodeEAigu} ${CodeAGrave} \e[35m${EXPORTED_DISPLAY}\e[0m                  \e(0x\e(B
+     \e(0x\e(B \e(0b\e(B Lors d'une connexion \e[35mSSH\e[0m, le DISPLAY est automatiquement export${CodeEAigu} \e(0x\e(B
+     \e(0x\e(B \e(0b\e(B ${StatusLine}\e(0x\e(B
+     \e(0x\e(B                                                                    \e(0x\e(B
+     \e(0x\e(B \e[31m\e(0\`\e(B Important:\e[0m                                                       \e(0x\e(B
+     \e(0x\e(B \e[36mVous utilisez la version personnelle de MobaXterm.\e[0m                 \e(0x\e(B
+     \e(0x\e(B \e[36mEn achetant la version professionnelle de MobaXterm, vous pourrez\e[0m  \e(0x\e(B
+     \e(0x\e(B \e[36mpersonnaliser le logiciel ${CodeAGrave} votre convenance, en pr${CodeEAigu}-d${CodeEAigu}finissant\e[0m   \e(0x\e(B
+     \e(0x\e(B \e[36mvos options, votre propre message de bienvenue, votre logo ainsi\e[0m   \e(0x\e(B
+     \e(0x\e(B \e[36mque plusieurs autres param${CodeEGrave}tres.                                  \e[0m \e(0x\e(B
+     \e(0x\e(B \e[33mEn plus de vous assurer un support professionel, nous pouvons\e[0m      \e(0x\e(B
+     \e(0x\e(B \e[33mmodifier le programme MobaXterm ou d${CodeEAigu}velopper de nouveaux plugins\e[0m  \e(0x\e(B
+     \e(0x\e(B \e[33mselon vos besoins. Pour plus d'informations, utilisez Ctrl + Clic\e[0m  \e(0x\e(B
+     \e(0x\e(B \e[33msur le lien suivant : \e[35m\e[4mhttp://mobaxterm.mobatek.net/download.html\e[0m   \e(0x\e(B
+     \e(0mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\e(B"
+fi
+unset FIRSTTIME
+unset CodeAGrave
+unset CodeEAigu
+unset CodeEGrave
+unset StatusLine
+unset FANCYPS1
+
+
+function OpenIniFile {
+echo "Opening \"C:\Users\TO77122\DOCUME~1\Progs\MOBAXT~1\MobaXterm.ini\"..."
+/bin/cygstart.exe "`cygpath -u "C:\Users\TO77122\DOCUME~1\Progs\MOBAXT~1\MobaXterm.ini"`"
+}
+
+setopt noautomenu
+setopt nomenucomplete
+setopt INC_APPEND_HISTORY
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_IGNORE_SPACE
+setopt HIST_REDUCE_BLANKS
+setopt HIST_VERIFY
+fi
+fi
+
+. /etc/baseprofile

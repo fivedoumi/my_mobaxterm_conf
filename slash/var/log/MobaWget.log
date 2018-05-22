@@ -1,0 +1,9 @@
+
+BEGIN GetInetFile(http://mirrors.kernel.org/sourceware/cygwinports/x86/setup.ini, C:\Users\SHENGX~1\DOCUME~1\MOBAXT~1\home\.aptcyg\http%3a%2f%2fmirrors.kernel.org%2fsourceware%2fcygwinports\setup.ini)
+  hSession:=InternetOpen('Wget/1.8.1',INTERNET_OPEN_TYPE_PRECONFIG,nil,nil,0);
+    --> OK: hSession<>nil
+  hService:=InternetOpenUrl(hSession,PChar(AUrl),nil,0,0,0);
+    --> OK: hService<>nil
+  HttpQueryInfo(hService,HTTP_QUERY_STATUS_CODE,@infoBuffer[0],bufLen,Reserved);
+    --> OK
+      --> Reply<>200: Exiting...

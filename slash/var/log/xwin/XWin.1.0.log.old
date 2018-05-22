@@ -1,0 +1,58 @@
+Welcome to the XWin X Server
+Vendor: Moba/X
+Release: 1.16.3.0
+OS: Unknown  [Windows NT 10.0 build 14393] (WoW64)
+Package: version  built 2015-05-28
+
+XWin was started with the following command line:
+
+
+ C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash\bin\XWin_MobaX.exe 
+ -noreset -silent-dup-error -notrayicon -nolisten inet6 -clipboard 
+ -ac -fp /usr/share/fonts/misc :1.0 
+
+ddxProcessArgument - Initializing default screens
+winInitializeScreenDefaults - primary monitor w 1366 h 768
+winInitializeScreenDefaults - native DPI x 96 y 96
+(==) FontPath set to /usr/share/fonts/misc/
+(==) FontPath set to C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash/usr/share/fonts/misc/
+(==) FontPath set to /usr/share/fonts/TTF/
+(==) FontPath set to C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash/usr/share/fonts/TTF/
+(==) FontPath set to /usr/share/fonts/OTF/
+(==) FontPath set to C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash/usr/share/fonts/OTF/
+(==) FontPath set to /usr/share/fonts/Type1/
+(==) FontPath set to C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash/usr/share/fonts/Type1/
+(==) FontPath set to /usr/share/fonts/100dpi/
+(==) FontPath set to C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash/usr/share/fonts/100dpi/
+(==) FontPath set to /usr/share/fonts/75dpi/
+(==) FontPath set to C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash/usr/share/fonts/75dpi/
+(==) FontPath set to "C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash/usr/share/fonts/misc/,C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash/usr/share/fonts/TTF/,C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash/usr/share/fonts/OTF/,C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash/usr/share/fonts/Type1/,C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash/usr/share/fonts/100dpi/,C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash/usr/share/fonts/75dpi/"
+(==) Setting XKEYSYMDB path to XKEYSYMDB=C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash\usr\share\X11\XKeysymDB
+(==) Setting XERRORDB path to XERRORDB=C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash\usr\share\X11\XErrorDB
+(==) Setting XLOCALEDIR path to XLOCALEDIR=C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash\usr\share\X11\locale
+(==) Logfile set to "C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash\var\log\xwin\XWin.1.0.log"
+(==) Setting XKB path to C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash\usr\share\X11\xkb
+[427054.265] winDetectSupportedEngines - DirectDraw4 installed, allowing ShadowDDNL
+[427054.265] winDetectSupportedEngines - Returning, supported engines 00000015
+[427054.281] winSetEngine - Using Shadow DirectDraw NonLocking
+[427054.281] winScreenInit - Using Windows display depth of 32 bits per pixel
+[427054.296] winWindowProc - WM_SIZE - new client area w: 1350 h: 689
+[427054.312] winFinishScreenInitFB - Masks: 00ff0000 0000ff00 000000ff
+[427054.468] Warning: Locale not supported by X, falling back to 'C' locale.
+[427054.484] (EE) AIGLX: No native OpenGL in modes with a root window
+[427054.484] (II) AIGLX: enabled GLX_EXT_texture_from_pixmap
+[427054.484] (II) AIGLX: Loaded and initialized swrast
+[427054.484] (II) GLX: Initialized DRISWRAST GL provider for screen 0
+[427054.578] (II) [XKB]  "C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash\var\log\xwin\xkb_a05624" file successfully created.
+[427054.578] (II) [XKB]  Launching xkbcomp.exe with the following command:
+[427054.578] (II) [XKB]  "C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash\bin\xkbcomp_w32.exe" -w 1 "-RC:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash\usr\share\X11\xkb" -xkm "C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash\var\log\xwin\xkb_a05624" -em1 "The XKEYBOARD keymap compiler (xkbcomp) reports:" -emp "> " -eml "Errors from xkbcomp are not fatal to the X server" "C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash\var\log\xwin\server-1.0.xkm"
+[427054.578] (II) [XKB]  LaunchXkbComp(II) :  succeeded
+[427054.640] (II) [XKB]  Successfully created keyboard mapping file "C:\Users\SHENGX~1\DOCUME~1\MobaXterm\slash\var\log\xwin\xkb_a05624"
+[427054.703] winPointerWarpCursor - Discarding first warp: 675 344
+[427054.703] (--) 5 mouse buttons found
+[427054.703] (--) Setting autorepeat to delay=500, rate=31
+[427054.703] (--) Windows keyboard layout: "00000804" (00000804) "Chinese (Simplified) - US Keyboard", type 7
+[427054.703] (EE) Keyboardlayout "Chinese (Simplified) - US Keyboard" (00000804) is unknown, using X server default layout
+[427054.703] Rules = "base" Model = "pc105" Layout = "us" Variant = "" Options = ""
+[427065.109] winDeinitMultiWindowWM - Noting shutdown in progress
+[427065.109] (EE) Server terminated successfully (0). Closing log file.
